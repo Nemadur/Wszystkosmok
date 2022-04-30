@@ -12,11 +12,14 @@ paste here
 <p id="output"></p>
 
 <script>
-let text = document.getElementById("textArea").value;
-let output = document.getElementById("output");
+ 
+function translate() {
+  let text = document.getElementById("textArea").value;
+  let output = document.getElementById("output");
 
-const regex = new RegExp('(Wszystko smok., )|(\[.*\])');
-output.value = text.replace(regex, '');
+  const regex = new RegExp('(Wszystko smok., )|(\[.*\])');
+  output.value = text.replace(regex, '');
+}
 
 </script>
 
