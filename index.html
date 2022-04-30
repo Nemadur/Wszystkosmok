@@ -13,7 +13,7 @@ paste here
 
 <script>
 let text = document.getElementById("textArea").value;
-let output = document.getElementById("output").value;
+let output = document.getElementById("output");
 
 const regex = new RegExp('(Wszystko smok., )|(\[.*\])');
 output.value = text.replace(regex, '');
