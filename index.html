@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+</head>
+
+<textarea id="textArea">
+paste here
+</textarea>
+<button type="button" onclick="translate">Click Me!</button>
+<hr>
+<p id="output"></p>
+
+<script>
+let text = document.getElementById("textArea").value;
+let output = document.getElementById("output").value;
+
+const regex = new RegExp('(Wszystko smok., )|(\[.*\])');
+output.value = text.replace(regex, ''));
+
+</script>
+
+</html>
